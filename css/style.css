@@ -5,6 +5,25 @@ body,
   height: 100%;
 }
 
+.bg-1c1c1c {
+  background-color: #1c1c1c;
+}
+.ul-nonstyle {
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.ul-nonstyle li {
+  margin-bottom: 0.5rem;
+}
+.ul-nonstyle li .icon-feature {
+  width: 50px;
+  display: inline;
+}
+.c-6e6e6e{
+  color: #6e6e6e;
+}
 @media (max-width: 740px) {
   .full-page-intro {
     height: 1000px;
@@ -24,7 +43,26 @@ body,
 .carousel .carousel-inner .active {
   height: 100%;
 }
-
+@media only screen and (max-width: 575px) {
+  .ul-nonstyle {
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    text-align: left;
+    padding-left: 1.2rem;
+  }
+  .ul-nonstyle li {
+    margin-bottom: 0rem;
+  }
+  .ul-nonstyle li .icon-feature {
+    width: 35px;
+    display: inline;
+  }
+  .full-page-intro {
+    height: 850px;
+  }
+}
 /* Adjustment for mobile devices*/
 @media (max-width: 776px) {
   .carousel {
@@ -45,6 +83,35 @@ body,
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #1c1c1c;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .ul-nonstyle{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .bg-side-printer{
+    background-image: url('../img/printer.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left bottom;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .bg-side-printer{
+    background-image: url('../img/printer.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: left bottom;
+  }
+}
+@media only screen and (min-width: 1650px){
+  .bg-side-printer{
+    background-image: url('../img/printer.png');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: left bottom;
   }
 }
 
