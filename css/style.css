@@ -1,12 +1,68 @@
-/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
-html,
-body,
-.view {
-  height: 100%;
+*{
+  font-weight: 400;
 }
-
+p{
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+}
+header{
+  background-color: #060709;
+  padding-top: 1rem;
+}
+.braner-pantum{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-div-braner{
+  
+}
+.btn-lang{
+  background-color: transparent;
+  width: 60px;
+  padding: 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.btn-lang img{
+  max-width: 100%;
+}
 .bg-1c1c1c {
   background-color: #1c1c1c;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  content: "";
+}
+.nav-tabs{
+  border-bottom: none;
+}
+.nav-tabs .nav-item .nav-link, .nav-tabs .nav-link{
+  color: #495057;
+  font-weight: 400;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  border-color: transparent transparent #495057;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  font-weight: 400;
+
+}
+.container-video{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.btn-player{
+  cursor: pointer;
+}
+.icon-banner{
+  margin-top: 1rem;
+  width: 50%;
+  max-width: 100%;
 }
 .ul-nonstyle {
   list-style-type: none;
@@ -62,6 +118,13 @@ body,
   .full-page-intro {
     height: 850px;
   }
+  .icon-banner{
+    width: 100%;
+    max-width: 100%;
+  }
+  .braner-pantum{
+    flex-direction: column;
+  }
 }
 /* Adjustment for mobile devices*/
 @media (max-width: 776px) {
@@ -72,7 +135,7 @@ body,
 
 /* Navbar animation */
 .navbar {
-  background-color: transparent;
+  background-color: #1c1c1c;
 }
 
 .top-nav-collapse {
@@ -83,6 +146,10 @@ body,
 @media only screen and (max-width: 768px) {
   .navbar {
     background-color: #1c1c1c;
+  }
+  .icon-banner{
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 1024px){
@@ -117,5 +184,8 @@ body,
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
-  background-color: #1c1c1c;
+  background-color: #b21f25;
+}
+footer.page-footer .footer-copyright{
+  background-color: #060709;
 }

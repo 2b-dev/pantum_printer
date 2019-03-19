@@ -11,7 +11,9 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
     />
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -19,335 +21,388 @@
     <link href="css/mdb.min.css" rel="stylesheet" />
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet" />
-    <style type="text/css">
-      html,
-      body,
-      header,
-      .view {
-        height: 100%;
-      }
-
-      @media (max-width: 740px) {
-        html,
-        body,
-        header,
-        .view {
-          height: 1000px;
-        }
-      }
-
-      @media (min-width: 800px) and (max-width: 850px) {
-        html,
-        body,
-        header,
-        .view {
-          height: 650px;
-        }
-      }
-
-      @media (min-width: 800px) and (max-width: 850px) {
-        .navbar:not(.top-nav-collapse) {
-          background: #1c1c1c !important;
-        }
-      }
-    </style>
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <header>
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" height="50" alt="mdb logo" />
-        </a>
-
-        <!-- Collapse -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Left -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Product</a
-              >
-              <div
-                class="dropdown-menu dropdown-primary"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Single Function</a>
-                <a class="dropdown-item" href="#">High Speed</a>
-                <a class="dropdown-item" href="#">Multifunction</a>
+        <div class="col">
+          <div class="braner-pantum">
+            <img src="./img/logo.png" height="50" alt="PANTUM" />
+            <div class="ml-auto d-flex flex-row">
+              <div class="input-group pl-0">
+                <input
+                  class="form-control bg-transparent my-0 py-1 border-right-0 "
+                  type="text"
+                  placeholder="Search for product..."
+                  aria-label="Search"
+                />
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text bg-transparent border-left-0 lighten-3"
+                    id="basic-text1"
+                    ><i class="fas fa-search text-grey" aria-hidden="true"></i
+                  ></span>
+                </div>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Hot Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Compare</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Service/Customer Area</a>
-            </li>
-          </ul>
-
-          <!-- Right -->
-          <form class="form-inline">
-            <div class="md-form my-0">
-              <input
-                class="form-control mr-sm-2"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </div>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar -->
-
-    <!-- Full Page Intro -->
-    <div class="view full-page-intro" style="background-color: #1c1c1c;">
-      <!-- Mask & flexbox options-->
-      <div class="mask d-flex justify-content-center align-items-center">
-        <!-- Content -->
-        <div class="container">
-          <!--Grid row-->
-          <div class="row justify-content-center">
-            <!--Grid column-->
-            <div class="col-md-6 mb-4 white-text text-center text-md-left">
-              <h1 class="display-4 font-weight-bold wow fadeInUp">M6600NW</h1>
-              <h3 class="font-weight-bold d-none d-md-block wow fadeInUp">
-                Monochrome Laser Multifuntion Printer
-              </h3>
-              <hr class="hr-light" />
-              <ul class="ul-nonstyle d-block d-md-none d-lg-block wow fadeInLeft">
-                <li>
-                  <img
-                    src="./img/icon-speed.png"
-                    class="mr-2 icon-feature"
-                  />Fast Print and Copy speed
-                </li>
-                <li>
-                  <img src="./img/icon-wifi.png" class="mr-2 icon-feature" />
-                  Wi-Fi Connectivity and Mobile Printing
-                </li>
-                <li>
-                  <img src="./img/icon-cpu.png" class="mr-2 icon-feature" /> 600
-                  MHz Processor Speed and 256MB memory
-                </li>
-                <li>
-                  <img src="./img/icon-install.png" class="mr-2 icon-feature" />
-                  Convenient One Step Installation
-                </li>
-                <li>
-                  <img src="./img/icon-print.png" class="mr-2 icon-feature" />
-                  20000 Page Monthly Duty Cycle
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6 col-lg-6 mb-4 wow fadeInRight">
-              <!--Card-->
-              <div class="card bg-transparent shadow-none">
-                <img src="./img/printer.png" class="w-100 img-fluid" />
-              </div>
-              <!--/.Card-->
-            </div>
-            <!--Grid column-->
-            <div class="col-9 d-none d-md-block d-lg-none wow fadeInLeft">
-              <ul class="ul-nonstyle">
-                <li>
-                  <img
-                    src="./img/icon-speed.png"
-                    class="mr-2 icon-feature"
-                  />Fast Print and Copy speed
-                </li>
-                <li>
-                  <img src="./img/icon-wifi.png" class="mr-2 icon-feature" />
-                  Wi-Fi Connectivity and Mobile Printing
-                </li>
-                <li>
-                  <img src="./img/icon-cpu.png" class="mr-2 icon-feature" /> 600
-                  MHz Processor Speed and 256MB memory
-                </li>
-                <li>
-                  <img src="./img/icon-install.png" class="mr-2 icon-feature" />
-                  Convenient One Step Installation
-                </li>
-                <li>
-                  <img src="./img/icon-print.png" class="mr-2 icon-feature" />
-                  20000 Page Monthly Duty Cycle
-                </li>
-              </ul>
+              <button class="btn btn-lang">
+                <img src="./img/flag-th.jpg" />
+              </button>
+              <button class="btn btn-lang">
+                <img src="./img/flag-eng.jpg" />
+              </button>
             </div>
           </div>
-          <!--Grid row-->
         </div>
-        <!-- Content -->
       </div>
-      <!-- Mask & flexbox options-->
-    </div>
-    <!-- Full Page Intro -->
+      <nav
+        class="navbar navbar-expand-lg mt-2 navbar-dark scrolling-navbar py-0"
+      >
+        <div class="container">
+          <!-- Collapse -->
+          <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Product</a
+                >
+                <div
+                  class="dropdown-menu dropdown-primary"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Single Function</a>
+                  <a class="dropdown-item" href="#">High Speed</a>
+                  <a class="dropdown-item" href="#">Multifunction</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Hot Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Compare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Service/Customer Area</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!--Main layout-->
-    <main class="bg-1c1c1c">
-      <section class="bg-1c1c1c py-5 bg-side-printer">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <h3 class="text-center white-text wow fadeInUp" >
-                <strong>All in one printer</strong>
-              </h3>
-            </div>
-            <div class="col-12 col-md-8 col-lg-7 wow fadeInUp">
-              <p class="mb-4 text-center c-6e6e6e">
-                <strong
-                  >Fulfill your office demands. Monochrome Laser Multifuntion
-                  Printer Print / Copy /Scan /Fax / Network / Wi-Fi / Mobile
-                  Printing & Scanning</strong
-                >
-              </p>
-            </div>
-          </div>
+    <main class="">
+      <section class="py-3">
+        <div class="container-fluid">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent">
+              <li class="breadcrumb-item">
+                <a class="black-text" href="#">Shop</a
+                ><i class="fas fa-angle-right mx-2" aria-hidden="true"></i>
+              </li>
+              <li class="breadcrumb-item active">P2500W</li>
+            </ol>
+          </nav>
         </div>
-        <div class="container mt-lg-5">
-          <div class="row justify-content-center justify-content-lg-end">
-            <div class="col-12 col-md-8 col-lg-6">
-              <div class="row justify-content-lg-end">
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp"><strong>Print speed</strong></p>
-                  <h5 class="white-text wow fadeInUp"><strong>22 ppm A4</strong></h5>
+        <div class="container-fluid">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="description-tab"
+                data-toggle="tab"
+                href="#description"
+                role="tab"
+                aria-controls="description"
+                aria-selected="true"
+                >Description</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="additional-tab"
+                data-toggle="tab"
+                href="#additional"
+                role="tab"
+                aria-controls="additional"
+                aria-selected="false"
+                >Additional Information</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane py-5 fade show active"
+              id="description"
+              role="tabpanel"
+              aria-labelledby="description-tab"
+            >
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <img
+                      src="./img/titilep2500.png"
+                      class="img-fluid w-100 wow fadeInRight"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-5 mb-3">
+                    <h2
+                      class="h2-responsive font-weight-bold mb-4 wow fadeInLeft"
+                    >
+                      Monochrome Laser Printer
+                    </h2>
+                    <p>
+                      Print high quality document on-the-go with the ultimate
+                      compact
+                    </p>
+                    <p>Printer that is easy to use and easy to carry.</p>
+                    <p>
+                      Enjoy connectivity, space saving and budget friendly
+                      features from the mini printer that SMB, home user and
+                      office profressionals rely on.
+                    </p>
+                    <img
+                      src="./img/icon-banner.png"
+                      class="icon-banner wow fadeInLeft"
+                    />
+                  </div>
+                  <div class="col-12 col-lg-6 mb-3">
+                    <img
+                      src="./img/p2500w_right.png"
+                      class="img-fluid w-100 wow fadeInRight"
+                    />
+                  </div>
                 </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp">
-                    <strong>Resolution (DPI)</strong>
-                  </p>
-                  <h5 class="white-text wow fadeInUp">
-                    <strong>1200x1200dpi (Max)</strong>
-                  </h5>
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-5 mb-3 text-md-left">
+                    <img src="./img/l1.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5 mb-3 text-md-right">
+                    <img src="./img/l2.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5 mb-3 text-md-left">
+                    <img src="./img/l3.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5 mb-3 text-md-right">
+                    <img src="./img/l4.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5 mb-3 text-md-left">
+                    <img src="./img/l5.jpg" class="img-fluid" />
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-5 mb-3 text-md-right">
+                    <img src="./img/l6.jpg" class="img-fluid" />
+                  </div>
                 </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp">
-                    <strong>Frist print out time</strong>
-                  </p>
-                  <h5 class="white-text wow fadeInUp">
-                    <strong>Less than 7.8s</strong>
-                  </h5>
+                <div class="row my-5">
+                  <div class="col-12 col-md-6">
+                    <img
+                      src="./img/p2500w_top.png"
+                      class="img-fluid w-100 wow fadeInLeft"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="row justify-content-lg-end">
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Print speed</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>22 ppm A4</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Resolution (DPI)</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>1200x1200dpi (Max)</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Frist print out time</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>Less than 7.8s</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Duplex mode</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>Manual</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Processor Speed</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>600MHz</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Memory</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>256MB (Max 512MB)</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Input Tray</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>150 pages</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Output Capacity</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>100 pages</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>USB</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>USB 2.0 Hi-speed</strong>
+                        </h5>
+                      </div>
+                      <div class="col-6 mb-3">
+                        <p class="mb-0 wow fadeInUp">
+                          <strong>Wi-Fi</strong>
+                        </p>
+                        <h5 class="wow fadeInUp">
+                          <strong>Yes</strong>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp"><strong>Duplex mode</strong></p>
-                  <h5 class="white-text wow fadeInUp"><strong>Manual</strong></h5>
+                <div class="row">
+                  <div class="col-12 mb-3">
+                    <img
+                      src="./img/preProductP2500.jpg"
+                      class="img-fluid w-100 wow bounceInUp"
+                    />
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="w-100">
+                      <video class="w-100 wow fadeIn video-player">
+                        <source src="./img/p2500w.mp4" type="video/mp4" />
+                        Your browser does not support HTML5 video.
+                      </video>
+                      <div class="container-video">
+                        <img
+                          src="./img/player-control-first.png"
+                          class="img-fluid w-100 wow fadeIn btn-player"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp">
-                    <strong>Processor Speed</strong>
-                  </p>
-                  <h5 class="white-text wow fadeInUp"><strong>600MHz</strong></h5>
-                </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp"><strong>Memory</strong></p>
-                  <h5 class="white-text wow fadeInUp">
-                    <strong>256MB (Max 512MB)</strong>
-                  </h5>
-                </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp"><strong>Input Tray</strong></p>
-                  <h5 class="white-text wow fadeInUp"><strong>150 pages</strong></h5>
-                </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp">
-                    <strong>Output Capacity</strong>
-                  </p>
-                  <h5 class="white-text wow fadeInUp"><strong>100 pages</strong></h5>
-                </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp"><strong>USB</strong></p>
-                  <h5 class="white-text wow fadeInUp">
-                    <strong>USB 2.0 Hi-speed</strong>
-                  </h5>
-                </div>
-                <div class="col-6 mb-3">
-                  <p class="mb-0 c-6e6e6e wow fadeInUp"><strong>Wi-Fi</strong></p>
-                  <h5 class="white-text wow fadeInUp"><strong>Yes</strong></h5>
+                <div class="row">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-12 text-center">
+                        <h3 class="wow fadeInRight">
+                          Driver Download
+                        </h3>
+                      </div>
+                      <div
+                        class="col-12 col-md-9 col-lg-10 d-flex align-items-center"
+                      >
+                        <h5 class="wow fadeInLeft">
+                          Driver Printer Mac Driver V1.8.2 codesign 1
+                        </h5>
+                      </div>
+                      <div
+                        class="col-12 col-md-3 col-lg-2 text-center text-md-right"
+                      >
+                        <button class="btn btn-red wow fadeInRight">
+                          Download
+                        </button>
+                      </div>
+                      <div class="col-12 border-bottom border-dark"></div>
+                      <div class="col-12">
+                        <hr class="hr-light" />
+                      </div>
+                      <div
+                        class="col-12 col-md-9 col-lg-10 d-flex align-items-center"
+                      >
+                        <h5 class="wow fadeInLeft">
+                          Driver For Windows V1.10.1
+                        </h5>
+                      </div>
+                      <div
+                        class="col-12 col-md-3 col-lg-2 text-center text-md-right"
+                      >
+                        <button class="btn btn-red wow fadeInRight">
+                          Download
+                        </button>
+                      </div>
+                      <div class="col-12 border-bottom border-dark"></div>
+                      <div class="col-12">
+                        <hr class="hr-light" />
+                      </div>
+                      <div
+                        class="col-12 col-md-9 col-lg-10 d-flex align-items-center"
+                      >
+                        <h5 class="wow fadeInLeft">
+                          Driver For Ubuntu V1.1.5
+                        </h5>
+                      </div>
+                      <div
+                        class="col-12 col-md-3 col-lg-2 text-center text-md-right"
+                      >
+                        <button class="btn btn-red wow fadeInRight">
+                          Download
+                        </button>
+                      </div>
+                      <div class="col-12 border-bottom border-dark"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="wow bounceInUp">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/wQwixzcX9Yk"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-      <section class="bg-1c1c1c py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              <h3 class="white-text wow fadeInRight">Driver Download</h3>
-            </div>
-            <div class="col-10 d-flex align-items-center">
-              <h5 class="white-text wow fadeInLeft">
-                Driver Printer M6600NW Series Mac Driver V1.8.2 codesign 1
-              </h5>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-red wow fadeInRight">Download</button>
-            </div>
-            <div class="col-12">
-              <hr class="hr-light" />
-            </div>
-            <div class="col-10 d-flex align-items-center">
-              <h5 class="white-text wow fadeInLeft">
-                Driver For Windows V1.10.1
-              </h5>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-red wow fadeInRight">Download</button>
-            </div>
-            <div class="col-12">
-              <hr class="hr-light" />
-            </div>
-            <div class="col-10 d-flex align-items-center">
-              <h5 class="white-text wow fadeInLeft">
-                Driver For Ubuntu V1.1.5
-              </h5>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-red wow fadeInRight">Download</button>
-            </div>
-            <div class="col-12">
-              <hr class="hr-light" />
+            <div
+              class="tab-pane fade"
+              id="additional"
+              role="tabpanel"
+              aria-labelledby="additional-tab"
+            >
+              Additional Infomation
             </div>
           </div>
         </div>
@@ -358,28 +413,35 @@
     <!--Footer-->
     <footer class="page-footer text-center font-small mt-4 wow fadeIn">
       <hr class="my-4" />
-      <div class="container text-center text-md-left mb-4">
+      <div class="container-fluid text-center text-md-left mb-4 px-5">
         <!-- Grid row -->
         <div class="row">
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 border-bottom">
               SERVICE CENTER
             </h5>
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!">02-101-3144</a>
+                <a href="#!"
+                  ><h3>
+                    <i class="fas fa-phone-square mr-2"></i>02-101-3144
+                  </h3></a
+                >
               </li>
               <li>
-                <a href="#!">Facebook :</a>
+                <a href="#!"><i class="fab fa-facebook mr-2"></i>Facebook :</a>
               </li>
               <li>
-                <a href="#!">Line : </a>
+                <a href="#!"><i class="fab fa-line mr-2"></i>Line : </a>
               </li>
               <li>
-                <a href="#!">info@pantum.co.th</a>
+                <a href="#!"
+                  ><i class="fas fa-envelope-square mr-2"></i
+                  >info@pantum.co.th</a
+                >
               </li>
             </ul>
           </div>
@@ -390,12 +452,14 @@
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">MAP</h5>
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 border-bottom">
+              MAP
+            </h5>
 
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15498.52407808077!2d100.48874400000001!3d13.801103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa87da2733453001f!2zUGFudHVtIChUaGFpbGFuZCkgQ28uLEx0ZCDguJrguKPguLTguKnguLHguJcg4LmB4Lie4LiZ4LiX4Lix4LmI4LihKOC4m-C4o-C4sOC5gOC4l-C4qOC5hOC4l-C4oikg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sen!2sth!4v1552130079957"
               width="100%"
-              height="100"
+              height="150"
               frameborder="0"
               style="border:0"
               allowfullscreen
@@ -408,11 +472,18 @@
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ADDRESS</h5>
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 border-bottom">
+              ADDRESS
+            </h5>
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!"><strong>Pantum Thailand co.,Ltd</strong></a>
+                <a href="#!"
+                  ><strong
+                    ><i class="fas fa-map-marked mr-2"></i>Pantum Thailand
+                    co.,Ltd</strong
+                  ></a
+                >
               </li>
               <li>
                 <a href="#!"
@@ -429,20 +500,35 @@
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACT</h5>
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4 border-bottom">
+              CONTACT
+            </h5>
 
             <ul class="list-unstyled">
               <li>
-                <a href="#!">02-101-3144, 02-101-3143</a>
+                <a href="#!"
+                  ><h5>
+                    <i class="fas fa-phone-square mr-2"></i>02-101-3144,
+                    <i class="fas fa-fax mr-2"></i>02-101-3143
+                  </h5></a
+                >
               </li>
               <li>
-                <a href="#!">Main +6695 923 9685</a>
+                <a href="#!"
+                  ><i class="fas fa-phone-square mr-2"></i> Main +6695 923
+                  9685</a
+                >
               </li>
               <li>
-                <a href="#!">phu-it@pantum.co.th</a>
+                <a href="#!"
+                  ><i class="fas fa-envelope-square mr-2"></i
+                  >phu-it@pantum.co.th</a
+                >
               </li>
               <li>
-                <a href="www.pantum.com">www.pantum.com</a>
+                <a href="www.pantum.com"
+                  ><i class="fas fa-globe mr-2"></i>www.pantum.com</a
+                >
               </li>
             </ul>
           </div>
@@ -510,6 +596,11 @@
     <script type="text/javascript">
       // Animations initialization
       new WOW().init();
+      $(".btn-player").click(function() {
+        $(".container-video").hide();
+        $(".video-player").trigger("play");
+        $(".video-player").prop("controls", true);
+      });
     </script>
   </body>
 </html>
